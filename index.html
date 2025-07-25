@@ -1,13 +1,150 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <title>Резюме — Матвей</title>
+</head>
+<body>
+  <div id="app">
+
+    <!-- Фото, Приветствие, Языки -->
+    <div class="row header-row">
+      <section class="section image">
+        <img src="./public/profileImg.svg" alt="Фото профиля" class="profile-photo" />
+      </section>
+
+      <section class="section greeting">
+        <p class="greet">Hello 👋🏻 I’m</p>
+        <div class="me">
+          <h2 class="name">Матвей</h2>
+          <h2 class="role">Frontend Developer</h2>
+        </div>
+      </section>
+
+      <section class="section languages">
+        <h2 class="section-title" contenteditable="true">Languages</h2>
+          <ul class="languages-list">
+            <li class="language-item">
+              <span class="lang-name">Russian</span>
+              <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+            </li>
+            <li class="language-item">
+              <span class="lang-name">English</span>
+              <div class="lang-bar"><div class="lang-fill" style="width: 70%"></div></div>
+            </li>
+            <li class="language-item">
+              <span class="lang-name">French</span>
+              <div class="lang-bar"><div class="lang-fill" style="width: 30%"></div></div>
+            </li>
+          </ul>
+      </section>
+    </div>
+
+    <!-- Опыт + Инструменты -->
+    <div class="row experience-row">
+      <section class="section experience">
+            <h2 class="section-title">Experience</h2>
+
+            <article class="experience-card current">
+              <div class="experience-header">
+                <span class="experience-date">2023 – Present</span>
+                <span class="most-recent">most recent</span>
+              </div>
+              <div class="experience-row">
+                <div class="experience-left">
+                  <h3 class="position">Frontend-разработчик</h3>
+                  <p class="company-current">Pet-проекты и open-source</p>
+                </div>
+                <div class="experience-right">
+                  <ul class="details">
+                    <li>Создание интерфейсов на React и TypeScript</li>
+                    <li>Интеграция REST API, JWT, WebSocket</li>
+                    <li>Настройка окружения: Vite, Webpack</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="experience-card">
+              <div class="experience-header">
+                <span class="experience-date">2023 – Present</span>
+              </div>
+              <div class="experience-row">
+                <div class="experience-left">
+                  <h3 class="position">Проектная работа</h3>
+                  <p class="company">Pet-проекты, обучение</p>
+                </div>
+                <div class="experience-right">
+                  <ul class="details">
+                    <li>Кастомизация интерфейса с ролями, авторизацией и WebSocket</li>
+                    <li>Сервис учёта посещаемости мероприятий</li>
+                    <li>Онлайн-магазин с адаптивом и загрузкой данных</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="experience-card">
+              <div class="experience-header">
+                <span class="experience-date">Tech Stack</span>
+              </div>
+              <div class="experience-row">
+                <div class="experience-left">
+                  <h3 class="position">Технические навыки</h3>
+                  <p class="company">React, TS, HTML, CSS</p>
+                </div>
+                <div class="experience-right">
+                  <ul class="details">
+                    <li>HTML / CSS: адаптив, формы, Flexbox, Grid</li>
+                    <li>JS / TS: ES6+, async, типизация, замыкания</li>
+                    <li>React / Redux: компоненты, маршруты, состояние</li>
+                    <li>Git, Webpack, Vite: настройка, командная разработка</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+
+      <section class="section tools">
+        <h2 class="section-title">Tools & Skills</h2>
+        <ul class="skills design">
+          <li>HTML, CSS (Flexbox, Grid, формы, анимации)</li>
+          <li>JavaScript (ES6, ООП, замыкания, async)</li>
+          <li>TypeScript (типизация, интерфейсы)</li>
+        </ul>
+        <ul class="skills no-code">
+          <li>React, Redux, SPA, хуки, состояние</li>
+          <li>REST API, взаимодействие с сервером</li>
+          <li>Webpack, Vite, Git, Node.js</li>
+        </ul>
+        <ul class="skills ai">
+          <li>Работа с макетами (Figma → Code)</li>
+          <li>Адаптивная и кроссбраузерная вёрстка</li>
+          <li>Agile, командная работа, ответственность</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Образование + Интересы/Контакты -->
+    <div class="row bottom-row">
+       
+
+
+
+        <section class="section contacts">
+          <h2 class="section-title">Let’s chat! I’m ready to work on exciting projects</h2>
+          <address>
+            <p>Email: <a href="mailto:druzhininmd2005@gmail.com">druzhininmd2005@gmail.com</a></p>
+            <p>Телефон: <a href="tel:+79505579794">+7 950 557 97 94</a></p>
+            <p>GitHub: <a href="https://github.com/mattveyyyy" target="_blank">github.com/mattveyyyy</a></p>
+          </address>
+        </section>
+      </section>
+    </div>
+
+  </div>
+</body>
 </html>
